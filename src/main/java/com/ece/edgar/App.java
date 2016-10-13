@@ -57,8 +57,8 @@ public class App {
 
         // Setup MapReduce && combiner
         job.setMapperClass(FirstNameByOriginMapper.class);
-        job.setCombinerClass(FirstNameByOriginReduce.class);
-        job.setReducerClass(FirstNameByOriginReduce.class);
+        job.setCombinerClass(SumReduce.class);
+        job.setReducerClass(SumReduce.class);
         job.setNumReduceTasks(1);
 
         jobSpecification(inputPath, outputDir, conf, job);
@@ -84,8 +84,8 @@ public class App {
 
         // Setup MapReduce && combiner
         job.setMapperClass(NumberOfFirstNameByNumberOfOriginMapper.class);
-        job.setCombinerClass(FirstNameByOriginReduce.class);
-        job.setReducerClass(FirstNameByOriginReduce.class);
+        job.setCombinerClass(SumReduce.class);
+        job.setReducerClass(SumReduce.class);
         job.setNumReduceTasks(1);
 
         // Specify key / value
@@ -109,6 +109,7 @@ public class App {
 
         // Setup MapReduce
         job.setMapperClass(ProportionMaleFemaleMapper.class);
+        job.setCombinerClass(SumReduce.class);
         job.setReducerClass(ProportionMaleFemaleReduce.class);
         job.setNumReduceTasks(1);
 

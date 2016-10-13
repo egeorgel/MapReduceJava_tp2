@@ -50,10 +50,8 @@ public class ProportionMaleFemaleTest {
 
     @Test
     public void testFinal_15m_6f_OUTPUT_m72_f28() throws IOException, InterruptedException {
-        Text value = new Text("lena;f;scandinavian, german, russian;0.06\n" +
-                "leela;f;indian;0\n" +
-                "len;m;english;0.40\n"+
-                "len;m;english;0.40\n"+
+        Text value = new Text("lena;f,f;scandinavian, german, russian;0.06\n" +
+                "len;m,m;english;0.40\n"+
                 "len;m;english;0.40\n"+
                 "len;m;english;0.40\n"+
                 "len;m;english;0.40");

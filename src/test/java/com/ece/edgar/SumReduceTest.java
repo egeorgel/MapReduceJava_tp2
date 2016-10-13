@@ -12,13 +12,13 @@ import java.util.Arrays;
 /**
  * Created by Edgar on 09/10/2016.
  */
-public class FirstNameByOriginReduceTest  {
+public class SumReduceTest {
 
     ReduceDriver<Text, IntWritable, Text, IntWritable> reduceDriver;
 
     @Before
     public void setup() {
-        FirstNameByOriginReduce reducer = new FirstNameByOriginReduce();
+        SumReduce reducer = new SumReduce();
         reduceDriver = ReduceDriver.newReduceDriver(reducer);
     }
 

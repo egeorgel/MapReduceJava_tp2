@@ -19,7 +19,7 @@ public class NumberOfFirstNameByNumberOfOriginTest {
     @Before
     public void setup() {
         NumberOfFirstNameByNumberOfOriginMapper mapper = new NumberOfFirstNameByNumberOfOriginMapper();
-        FirstNameByOriginReduce reducer = new FirstNameByOriginReduce();
+        SumReduce reducer = new SumReduce();
 
         mapReduceDriver = MapReduceDriver.newMapReduceDriver(mapper, reducer);
     }

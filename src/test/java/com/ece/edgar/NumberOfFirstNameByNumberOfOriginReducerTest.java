@@ -17,7 +17,7 @@ public class NumberOfFirstNameByNumberOfOriginReducerTest {
 
     @Before
     public void setup() {
-        FirstNameByOriginReduce reducer = new FirstNameByOriginReduce();
+        SumReduce reducer = new SumReduce();
         reduceDriver = ReduceDriver.newReduceDriver(reducer);
     }
 

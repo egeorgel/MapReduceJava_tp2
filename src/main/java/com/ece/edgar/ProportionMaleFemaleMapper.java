@@ -23,9 +23,12 @@ public class ProportionMaleFemaleMapper extends
         String[] csv = value.toString().split(";|\\r?\\n"); //split line whene new line or ;
         int conteur = 1;
         for (String str : csv) {
-            if (conteur == 2) { // if it's a country name
-                word.set(str);
-                context.write(word, ONE);
+            if (conteur == 2) { // if it-s a gender
+                String[] countrys = str.split(",");
+                for (String country : countrys) { // for multiple gender
+                    word.set(country);
+                    context.write(word, ONE);
+                }
             } else if ( conteur == 4)
                 conteur = 0;
 

@@ -9,7 +9,7 @@ import java.io.IOException;
 /**
  * Created by Edgar on 09/10/2016.
  */
-public class FirstNameByOriginReduce extends
+public class SumReduce extends
         Reducer<Text, IntWritable, Text, IntWritable> {
 
     public void reduce(Text text, Iterable<IntWritable> values, Context context)
