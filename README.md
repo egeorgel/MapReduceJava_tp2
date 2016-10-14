@@ -32,6 +32,3 @@ The main program is located in App.cpp
 
 feel free to fork and improve the code.
 
-## Authors
-
-* **Edgar Georgel** - *Initial work* - [MapReduce in Java tp2](https://github.com/egeorgel/MapReduceJava_tp2)
